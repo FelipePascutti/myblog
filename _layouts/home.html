@@ -1,9 +1,32 @@
 ---
 layout: default
 ---
+<br>
+<div class="introducao">
+    <h1>Análise de animes</h1>
+</div>
+
+
 <ul>
-<header><img src="{{'/assets/images/Logo1.jpg' | relative_url }}"></header>
 {% for post in site.posts %}
-    <li><a = href="{{ post.url | relative_url }}" >{{post.title}}</a></li>
+<br>
+  <div class="card">
+    <div class="title">
+        <a href="{{ post.url | relative_url }}" style = "color:#F19F4D">{{post.title}}</a>
+    </div>
+    <div class="resume">
+        {{post.resume}}
+        <br>
+        <div class="figure">
+            {{post.figureresum}}
+        </div>
+        <div class="autor">
+            Escrito por {{post.author}} em {{post.data}}
+        </div>
+    </div>
+  </div>
+  
 {% endfor %}
+<br>
+<br>
 </ul>
