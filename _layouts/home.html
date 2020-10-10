@@ -14,16 +14,19 @@ layout: default
     <div class="title">
         <a href="{{ post.url | relative_url }}" style = "color:#F19F4D">{{post.title}}</a>
     </div>
-    <div class="resume">
-        {{post.resume}}
-        <br>
-        <div class="figure">
-            <img src = {{post.figureresum | relative_url}} witdh = "100" height = "100">             
+    <div class="card2">
+        <div class="resume">
+            {{post.resume}}
+            <br>
         </div>
-        <div class="autor">
-            Escrito por {{post.author}} em {{post.data}}
+        <div class="figure">
+            <img src = "{{post.figureresum | relative_url}}" width="100%" height="same-as-width">             
         </div>
     </div>
+        <div class="autor">
+            Escrito por {{post.author}} em {{post.data}}
+   
+</div>
   </div>
   
 {% endfor %}
