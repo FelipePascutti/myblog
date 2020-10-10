@@ -59,5 +59,6 @@ body {
 
 .autor{
     position:relative;
-    left:80%
+    left:80%;
+    font-size: 11px; 
 }
